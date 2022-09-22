@@ -22,6 +22,48 @@ const Section = styled.section`
     .container{
         background-color: var(--dark-blue);
         color: var(--primary-color);
+        padding: 72px 242px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 12px;
+
+        h2{
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 72px;
+            width: 716px;
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .form-group{
+            display: flex;
+            gap: 24px;
+
+            input{
+                width: 370px;
+                background: var(--primary-color);
+                color: var(--color-black);
+                padding: 12px 32px;
+                border-radius: 56px;
+            }
+
+            button{
+                padding: 16px 56px;
+                background: var(--green-backgroound);
+                color: var(--dark-blue);
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 28px;
+                border-radius: 56px;
+            }
+        }
     }
 `
 export default Subscribe
