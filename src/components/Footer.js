@@ -60,11 +60,16 @@ function FooterSection() {
 
 const Footer = styled.footer`
     display: flex;
-    margin-top: 84px;
-    padding: 120.5px 179px 117px 100px;
+    width: 90%;
+    margin: 84px auto 0 auto;
+    padding: 120.5px auto;
     font-family: 'Open Sans';
     font-style: normal;
     gap: 179px;
+
+    @media (max-width:640px) {
+        flex-direction: column;
+    }
 
     .reserved-col{
         display: flex;
@@ -98,6 +103,10 @@ const Footer = styled.footer`
         display: flex;
         justify-content: space-between;
         gap: 96px;
+
+        @media (max-width:640px) {
+            flex-direction: column;
+        }
 
         &-col{
             display: flex;

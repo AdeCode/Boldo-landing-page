@@ -35,11 +35,30 @@ function HeaderSection() {
 
 const Header = styled.header`
     background: var(--dark-blue);
-    padding: 56px 100px;
+    padding: 56px 0px;
+    width: 100%;
+
+    @media (max-width: 640px){
+      padding: 10px;
+
+      .row{
+        flex-direction: column;
+
+        .col{
+          width: 100%;
+          justify-content: center;
+          img{
+            width: 100%;
+          }
+        }
+      }
+    }
 
     .row{
       display: flex;
-      margin-top: 65px;
+      /* margin-top: 65px; */
+      width:90%;
+      margin: 65px auto 0 auto;
       .col{
         display: flex;
         width: 50%;
@@ -94,7 +113,13 @@ const Header = styled.header`
     .wall-row{
       display: flex;
       justify-content: center;
-      margin-top: 56px;
+      /* margin-top: 56px; */
+      width: 80vw !important;
+      margin: 56px auto 0 auto;
+
+      img{
+        width: 100%;
+      }
     }
 
 `

@@ -15,89 +15,145 @@ import Sun from '../../images/sun.svg'
 function Service() {
     return (
         <Section>
-            <div className='row-top'>
-                <h4 className='title'>Our Services</h4>
-                <h3>Handshake infographic mass market crowdfunding iteration.</h3>
-            </div>
-            <div className='row-explore'>
-                <div className='col'>
-                    <div className='image'>
-                        <img src={Left} alt='left' />
-                    </div>
-                    <div className='content'>
-                        <h4>Cool feature title</h4>
-                        <p>Learning curve network effects return on investment.</p>
-                    </div>
-                    <div className='explore-link'>
-                        <h3>Explore</h3>
-                        <img src={Arrow} alt='arrow-right' />
-                    </div>
+            <div className='container'>
+                <div className='row-top'>
+                    <h4 className='title'>Our Services</h4>
+                    <h3>Handshake infographic mass market crowdfunding iteration.</h3>
                 </div>
-                <div className='col'>
-                    <div className='image'>
-                        <img src={Center} alt='center' />
+                <div className='row-explore'>
+                    <div className='col'>
+                        <div className='image'>
+                            <img src={Left} alt='left' />
+                        </div>
+                        <div className='content'>
+                            <h4>Cool feature title</h4>
+                            <p>Learning curve network effects return on investment.</p>
+                        </div>
+                        <div className='explore-link'>
+                            <h3>Explore</h3>
+                            <img src={Arrow} alt='arrow-right' />
+                        </div>
                     </div>
-                    <div className='content'>
-                        <h4>Even cooler feature</h4>
-                        <p>Learning curve network effects return on investment.</p>
+                    <div className='col'>
+                        <div className='image'>
+                            <img src={Center} alt='center' />
+                        </div>
+                        <div className='content'>
+                            <h4>Even cooler feature</h4>
+                            <p>Learning curve network effects return on investment.</p>
+                        </div>
+                        <div className='explore-link'>
+                            <h3>Explore</h3>
+                            <img src={Arrow} alt='arrow-right' />
+                        </div>
                     </div>
-                    <div className='explore-link'>
-                        <h3>Explore</h3>
-                        <img src={Arrow} alt='arrow-right' />
-                    </div>
-                </div>
-                <div className='col'>
-                    <div className='image'>
-                        <img src={Right} alt='right' />
-                    </div>
-                    <div className='content'>
-                        <h4>Cool feature title</h4>
-                        <p>Learning curve network effects return on investment.</p>
-                    </div>
-                    <div className='explore-link'>
-                        <h3>Explore</h3>
-                        <img src={Arrow} alt='arrow-right' />
-                    </div>
-                </div>
-            </div>
-            <div className='row-connect'>
-                <div className='row top'>
-                    <img src={GroupLeft} alt='left' />
-                    <div className='right'>
-                        <h2>We connect our customers with the best, and help them keep up-and stay open.</h2>
-                        <div className='list'>
-                            <div className='item'>
-                                <span className='mark'><img src={Mark} alt='mark' /></span><h4>We connect our customers with the best.</h4>
-                            </div>
-                            <div className='item'>
-                                <span className='mark'><img src={Mark} alt='mark' /></span><h4>Advisor success customer launch party.</h4>
-                            </div>
-                            <div className='item'>
-                                <span className='mark'><img src={Mark} alt='mark' /></span><h4>Business-to-consumer long tail.</h4>
-                            </div>
+                    <div className='col'>
+                        <div className='image'>
+                            <img src={Right} alt='right' />
+                        </div>
+                        <div className='content'>
+                            <h4>Cool feature title</h4>
+                            <p>Learning curve network effects return on investment.</p>
+                        </div>
+                        <div className='explore-link'>
+                            <h3>Explore</h3>
+                            <img src={Arrow} alt='arrow-right' />
                         </div>
                     </div>
                 </div>
-                <div className='row bottom'>
-                    <div className='right'>
-                        <h2>We connect our customers with the best, and help them keep up-and stay open.</h2>
-                        <div className='list'>
-                            <Button icon={Star} imgAlt='btn' text='We connect our customers with the best.' bgColor='#0A2640' txtColor='#FFFFFF' />
-                            <Button icon={Eyes} imgAlt='btn' text='Advisor success customer launch party.' bgColor='#FFFFFF' txtColor='#000000' />
-                            <Button icon={Sun} imgAlt='btn' text='Business-to-consumer long tail.' bgColor='#FFFFFF' txtColor='#000000' />
+                <div className='row-connect'>
+                    <div className='row top'>
+                        <img src={GroupLeft} alt='left' />
+                        <div className='right'>
+                            <h2>We connect our customers with the best, and help them keep up-and stay open.</h2>
+                            <div className='list'>
+                                <div className='item'>
+                                    <span className='mark'><img src={Mark} alt='mark' /></span><h4>We connect our customers with the best.</h4>
+                                </div>
+                                <div className='item'>
+                                    <span className='mark'><img src={Mark} alt='mark' /></span><h4>Advisor success customer launch party.</h4>
+                                </div>
+                                <div className='item'>
+                                    <span className='mark'><img src={Mark} alt='mark' /></span><h4>Business-to-consumer long tail.</h4>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <img src={GroupRight} alt='left' />
+                    <div className='row bottom'>
+                        <div className='right'>
+                            <h2>We connect our customers with the best, and help them keep up-and stay open.</h2>
+                            <div className='list'>
+                                <Button icon={Star} imgAlt='btn' text='We connect our customers with the best.' bgColor='#0A2640' txtColor='#FFFFFF' />
+                                <Button icon={Eyes} imgAlt='btn' text='Advisor success customer launch party.' bgColor='#FFFFFF' txtColor='#000000' />
+                                <Button icon={Sun} imgAlt='btn' text='Business-to-consumer long tail.' bgColor='#FFFFFF' txtColor='#000000' />
+                            </div>
+                        </div>
+                        <img src={GroupRight} alt='left' />
+                    </div>
                 </div>
             </div>
+
         </Section>
     )
 }
 
 const Section = styled.section`
-    padding: 82px 150px;
+    padding: 82px 0px;
+    width: 100%;
+    @media (max-width: 640px){
 
-    .row-top{
+        .container{
+            .row-top{
+                width: 100%;
+                
+                .title{
+                }
+                h3{
+                    width: 100% !important;
+
+                }
+            }
+
+            .row-explore{
+                flex-direction: column;
+            }
+
+            .row-connect{
+
+                .row{
+                    flex-direction: column;
+
+                    .right{
+
+                        h2{
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .bottom{
+                    width: 100%;
+                    .right{
+                        width: 100%;
+                        .list{
+                            width: 100%;
+
+                            button{
+                                width: 100% !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+
+    .container{
+        max-width: 80% !important;
+        margin: 0 auto;
+
+        .row-top{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -128,6 +184,14 @@ const Section = styled.section`
         justify-content: center;
         gap: 100px;
         font-family: 'Open Sans';
+
+        /* @media (max-width: 648px){
+            flex-direction: column;
+            align-items: center;
+
+            .col{
+            }
+        } */
 
         .col{
             .image{
@@ -179,6 +243,13 @@ const Section = styled.section`
         flex-direction: column;
         margin-top: 197px;
 
+        /* @media (max-width:648px){
+            h2{
+                font-size: 24px !important;
+            }
+        
+        } */
+
         h2{
             font-family: 'Manrope';
             font-style: normal;
@@ -201,7 +272,6 @@ const Section = styled.section`
                 padding-top: 50px;
                 display: flex;
                 flex-direction: column;
-                
 
                 .item{
                     display: flex;
@@ -232,7 +302,10 @@ const Section = styled.section`
 
             }
         }
+        }
     }
+
+    
 `
 
 export default Service

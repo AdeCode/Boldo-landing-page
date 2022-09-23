@@ -8,84 +8,129 @@ import Blog3 from '../images/blog-img3.svg'
 import Card1 from '../images/card-img1.svg'
 import Card2 from '../images/card-img2.svg'
 import Card3 from '../images/card-img3.svg'
-import Subscribe from './Subscribe'
 
 function BottomSection() {
-  return (
-    <Section>
-        <img src={Image} alt='we-connect'/>
-        <div className='connect-row'>
-            <h3>We connect our customers with the best, and help them keep up-and stay open.</h3>
-            <div className='connect-row-right'>
-                <div className='row'>
-                    <h4>We connect our customers with the best?</h4>
-                    <img src={ArrowDown} alt='arrow-down'/>
-                </div>
-                <div className='row'>
-                    <h4>Android research &amp; development rockstar? </h4>
-                    <img src={ArrowDown} alt='arrow-down'/>
-                </div>
+    return (
+        <Section>
+            <div className='img'>
+                <img src={Image} alt='we-connect' />
             </div>
-        </div>
-        <div className='blog-row'>
-            <div className='blog-row-title'>
-                <h4 className='title'>Our Blog</h4>
-                <p className='sub-title'>Value proposition accelerator product management venture</p>
-            </div>
-            <div className='blog-stories'>
-                <div className='card'>
-                    <img src={Blog1} alt='pitch-termsheet'/>
-                    <div className='content'>
-                        <div className='content-top'>
-                            <h4>Category</h4><time datetime="2021-11-22">November 22, 2021</time>
-                        </div>
-                        <p>Pitch termsheet backing validation focus release.</p>
+            <div className='connect-row'>
+                <h3>We connect our customers with the best, and help them keep up-and stay open.</h3>
+                <div className='connect-row-right'>
+                    <div className='row'>
+                        <h4>We connect our customers with the best?</h4>
+                        <img src={ArrowDown} alt='arrow-down' />
                     </div>
-                    <div className='card-bottom'>
-                        <img src={Card1} alt='profile'/>
-                        <h5>Chandler Bing</h5>
-                    </div>
-                </div>
-                <div className='card'>
-                    <img src={Blog2} alt='pitch-termsheet'/>
-                    <div className='content'>
-                        <div className='content-top'>
-                            <h4>Category</h4><time datetime="2021-11-22">November 22, 2021</time>
-                        </div>
-                        <p>Seed round direct mailing non-disclosure agreement graphical user interface rockstar.</p>
-                    </div>
-                    <div className='card-bottom'>
-                        <img src={Card2} alt='profile'/>
-                        <h5>Rachel Green</h5>
-                    </div>
-                </div>
-                <div className='card'>
-                    <img src={Blog3} alt='pitch-termsheet'/>
-                    <div className='content'>
-                        <div className='content-top'>
-                            <h4>Category</h4><time datetime="2021-11-22">November 22, 2021</time>
-                        </div>
-                        <p>Beta prototype sales iPad gen-z marketing network effects value proposition.</p>
-                    </div>
-                    <div className='card-bottom'>
-                        <img src={Card3} alt='profile'/>
-                        <h5>Monica Geller</h5>
+                    <div className='row'>
+                        <h4>Android research &amp; development rockstar? </h4>
+                        <img src={ArrowDown} alt='arrow-down' />
                     </div>
                 </div>
             </div>
-        </div>
-        <div className='load'>
-            <button>Load more</button>
-        </div>
-        {/* <Subscribe/>  */}
-    </Section>
-  )
+            <div className='blog-row'>
+                <div className='blog-row-title'>
+                    <h4 className='title'>Our Blog</h4>
+                    <p className='sub-title'>Value proposition accelerator product management venture</p>
+                </div>
+                <div className='blog-stories'>
+                    <div className='card'>
+                        <img src={Blog1} alt='pitch-termsheet' />
+                        <div className='content'>
+                            <div className='content-top'>
+                                <h4>Category</h4><time datetime="2021-11-22">November 22, 2021</time>
+                            </div>
+                            <p>Pitch termsheet backing validation focus release.</p>
+                        </div>
+                        <div className='card-bottom'>
+                            <img src={Card1} alt='profile' />
+                            <h5>Chandler Bing</h5>
+                        </div>
+                    </div>
+                    <div className='card'>
+                        <img src={Blog2} alt='pitch-termsheet' />
+                        <div className='content'>
+                            <div className='content-top'>
+                                <h4>Category</h4><time datetime="2021-11-22">November 22, 2021</time>
+                            </div>
+                            <p>Seed round direct mailing non-disclosure agreement graphical user interface rockstar.</p>
+                        </div>
+                        <div className='card-bottom'>
+                            <img src={Card2} alt='profile' />
+                            <h5>Rachel Green</h5>
+                        </div>
+                    </div>
+                    <div className='card'>
+                        <img src={Blog3} alt='pitch-termsheet' />
+                        <div className='content'>
+                            <div className='content-top'>
+                                <h4>Category</h4><time datetime="2021-11-22">November 22, 2021</time>
+                            </div>
+                            <p>Beta prototype sales iPad gen-z marketing network effects value proposition.</p>
+                        </div>
+                        <div className='card-bottom'>
+                            <img src={Card3} alt='profile' />
+                            <h5>Monica Geller</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className='load'>
+                <button>Load more</button>
+            </div>
+            {/* <Subscribe/>  */}
+        </Section>
+    )
 }
 
 const Section = styled.section`
-    padding: 124px 150px;
+    padding: 124px auto;
+    width: 80%;
     background: var(--body-background);
+    margin: 120px auto;
 
+    @media (max-width:640px){
+        
+
+        .connect-row{
+            flex-direction: column;
+            width:100vw;
+
+            h3{
+                width: inherit !important;
+            }
+        }
+
+        .blog-row{
+            padding: 0 10px;
+
+            &-title{
+                width: inherit !important;
+
+                .sub-title{
+                    width: inherit !important;
+                }
+            }
+            .blog-stories{
+                flex-direction: column;
+                margin-top: 20px;
+
+                .card{
+                    margin: 5px 0;
+                }
+            }
+        }
+    }
+
+    .img{
+        display: flex;
+        justify-content: center;
+
+        img{
+            width: 100%;
+        }
+    }
+    
     .connect-row{
         display: flex;
         justify-content: space-between;

@@ -9,6 +9,7 @@ import ProfileRight from '../images/profile-right.svg'
 function EnterpriseSection() {
   return (
     <Section>
+        <div className='container'>
         <div className='title-row'>
             <h2>An enterprise template to ramp up your company website</h2>
             <div className='arrow'>
@@ -46,13 +47,14 @@ function EnterpriseSection() {
                 “Buyer buzz partner network disruptive non-disclosure agreement business”
                 </h3>
                 <div className='card-bottom'>
-                    <img src={ProfileLeft} alt='profile'/>
+                    <img src={ProfileRight} alt='profile'/>
                     <div className='details'>
                         <h4>Albus Dumbledore</h4>
                         <p>Manager @ Howarts</p>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </Section>
   )
@@ -63,31 +65,51 @@ const Section = styled.section`
     color: var(--primary-color);
     display: flex;
     flex-direction: column;
-    padding: 96px 150px;
+    padding: 96px 0px;
+    width: 100%;
 
-    .title-row{
-        display: flex;
-        justify-content: space-between;
-        h2{
-            font-family: 'Manrope';
-            font-style: normal;
-            font-weight: 400;
-            font-size: var(--font-size-1300);
-            line-height: 72px;
-            width: 716px;
+    /* @media (max-width: 640px){
+        width: 100vw;
+        padding: 10px;
+
+        .title-row{
+            flex-direction: column;
+            width: 100vw;
+            padding: 0 5px;
         }
-        .arrow{
+
+        .card-row{
+            flex-direction: column;
+        }
+    } */
+
+    .container{
+        width: 80%;
+        margin: 0 auto;
+
+        .title-row{
             display: flex;
-            justify-content: flex-end;
-            align-items: flex-end;
-            gap: 28px;
-
-
-            img{
-                height: 72px;
-                width: 72px;
+            justify-content: space-between;
+            h2{
+                font-family: 'Manrope';
+                font-style: normal;
+                font-weight: 400;
+                font-size: var(--font-size-1300);
+                line-height: 72px;
+                width: 716px;
             }
-        }
+            .arrow{
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+                gap: 28px;
+
+
+                img{
+                    height: 72px;
+                    width: 72px;
+                }
+            }
     }
 
     .card-row{
@@ -97,13 +119,15 @@ const Section = styled.section`
         margin-top: 56px;
 
         .card{
+            
             display: flex;
             flex-direction: column;
-            padding: 40px;
+            padding: 30px;
             box-shadow: 0px 12px 32px rgba(0, 0, 0, 0.12);
             border-radius: 12px;
             background-color: var(--primary-color);
             height: fit-content;
+
             h3{
                 font-family: 'Open Sans';
                 font-style: normal;
@@ -142,5 +166,7 @@ const Section = styled.section`
             }
         }
     }
+    }
+    
 `
 export default EnterpriseSection
