@@ -7,57 +7,57 @@ import ProfileCenter from '../images/profile-center.svg'
 import ProfileRight from '../images/profile-right.svg'
 
 function EnterpriseSection() {
-  return (
-    <Section>
-        <div className='container'>
-        <div className='title-row'>
-            <h2>An enterprise template to ramp up your company website</h2>
-            <div className='arrow'>
-                <img src={ArrowBack} alt='back arrow'/>
-                <img src={ArrowFront} alt='front arrow'/>
-            </div>
-        </div>
-        <div className='card-row'>
-            <div className='card'>
-                <h3>
-                “Buyer buzz partner network disruptive non-disclosure agreement business”
-                </h3>
-                <div className='card-bottom'>
-                    <img src={ProfileLeft} alt='profile'/>
-                    <div className='details'>
-                        <h4>Albus Dumbledore</h4>
-                        <p>Manager @ Howarts</p>
+    return (
+        <Section>
+            <div className='container'>
+                <div className='title-row'>
+                    <h2>An enterprise template to ramp up your company website</h2>
+                    <div className='arrow'>
+                        <img src={ArrowBack} alt='back arrow' />
+                        <img src={ArrowFront} alt='front arrow' />
+                    </div>
+                </div>
+                <div className='card-row'>
+                    <div className='card'>
+                        <h3>
+                            “Buyer buzz partner network disruptive non-disclosure agreement business”
+                        </h3>
+                        <div className='card-bottom'>
+                            <img src={ProfileLeft} alt='profile' />
+                            <div className='details'>
+                                <h4>Albus Dumbledore</h4>
+                                <p>Manager @ Howarts</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='card'>
+                        <h3>
+                            “Learning curve infrastructure value proposition advisor strategy user experience hypotheses investor.”
+                        </h3>
+                        <div className='card-bottom'>
+                            <img src={ProfileCenter} alt='profile' />
+                            <div className='details'>
+                                <h4>Severus Snape</h4>
+                                <p>Manager @ Slytherin</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='card'>
+                        <h3>
+                            “Buyer buzz partner network disruptive non-disclosure agreement business”
+                        </h3>
+                        <div className='card-bottom'>
+                            <img src={ProfileRight} alt='profile' />
+                            <div className='details'>
+                                <h4>Albus Dumbledore</h4>
+                                <p>Manager @ Howarts</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div className='card'>
-                <h3>
-                “Learning curve infrastructure value proposition advisor strategy user experience hypotheses investor.”
-                </h3>
-                <div className='card-bottom'>
-                    <img src={ProfileCenter} alt='profile'/>
-                    <div className='details'>
-                        <h4>Severus Snape</h4>
-                        <p>Manager @ Slytherin</p>
-                    </div>
-                </div>
-            </div>
-            <div className='card'>
-                <h3>
-                “Buyer buzz partner network disruptive non-disclosure agreement business”
-                </h3>
-                <div className='card-bottom'>
-                    <img src={ProfileRight} alt='profile'/>
-                    <div className='details'>
-                        <h4>Albus Dumbledore</h4>
-                        <p>Manager @ Howarts</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    </Section>
-  )
+        </Section>
+    )
 }
 
 const Section = styled.section`
@@ -72,7 +72,10 @@ const Section = styled.section`
         width: 100% !important;
         padding: 10px;
 
-        .title-row{
+        .container{
+            width: 90% !important;
+
+            .title-row{
             flex-direction: column;
             width: 100vw;
             padding: 0 5px;
@@ -88,6 +91,9 @@ const Section = styled.section`
         .card-row{
             flex-direction: column;
         }
+
+        }
+        
     }
 
     .container{

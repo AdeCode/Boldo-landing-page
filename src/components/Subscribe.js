@@ -33,8 +33,14 @@ const Section = styled.section`
             }
 
             .form-group{
+                width: inherit;
                 display: flex;
                 flex-direction: column;
+                padding: 0 10px;
+
+                input{
+                    width: inherit !important;
+                };
             }
 
         }

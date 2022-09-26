@@ -74,6 +74,19 @@ const Header = styled.header`
       }
     }
 
+    @media (max-width: 380px){
+      .left{
+            .btn-row{
+              flex-direction: column;
+
+              .btn{
+                text-align: center;
+              }
+            }
+            
+          }
+    }
+
     .row{
       display: flex;
       /* margin-top: 65px; */

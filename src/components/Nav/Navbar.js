@@ -86,6 +86,7 @@ const Nav = styled.nav`
       font-weight: 600;
       font-size: var(--font-size-400);
       line-height: 28px;
+      cursor: pointer;
     }
 
     .btn{
@@ -95,6 +96,7 @@ const Nav = styled.nav`
       font-size: inherit;
       line-height: 24px;
       border-radius: 20px;
+      cursor: pointer;
     }
 
     &.active{
