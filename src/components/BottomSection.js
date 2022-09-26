@@ -94,21 +94,22 @@ const Section = styled.section`
 
         .connect-row{
             flex-direction: column;
-            width:100vw;
+            width:100%;
 
             h3{
-                width: inherit !important;
+                width: 100% !important;
             }
         }
 
         .blog-row{
             padding: 0 10px;
+            width: 100%;
 
             &-title{
-                width: inherit !important;
+                width: 100% !important;
 
                 .sub-title{
-                    width: inherit !important;
+                    width: 100% !important;
                 }
             }
             .blog-stories{

@@ -66,22 +66,29 @@ const Section = styled.section`
     display: flex;
     flex-direction: column;
     padding: 96px 0px;
-    width: 100%;
+    width: 100% !important;
 
-    /* @media (max-width: 640px){
-        width: 100vw;
+    @media (max-width: 640px){
+        width: 100% !important;
         padding: 10px;
 
         .title-row{
             flex-direction: column;
             width: 100vw;
             padding: 0 5px;
+
+            h2{
+                width: 100% !important;
+            }
+            .arrow{
+                justify-content: flex-start !important;
+            }
         }
 
         .card-row{
             flex-direction: column;
         }
-    } */
+    }
 
     .container{
         width: 80%;

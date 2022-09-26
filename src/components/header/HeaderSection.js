@@ -43,14 +43,34 @@ const Header = styled.header`
 
       .row{
         flex-direction: column;
+        width: 100% !important;
 
         .col{
-          width: 100%;
+          width: 100% !important;
           justify-content: center;
+
           img{
             width: 100%;
           }
+
+          
+
+          
         }
+
+        .left{
+            .btn-row{
+              margin-bottom: 40px;
+            }
+            h1{
+              width: 100% !important;
+            }
+            p{
+              width: inherit !important;
+            }
+          }
+
+        
       }
     }
 

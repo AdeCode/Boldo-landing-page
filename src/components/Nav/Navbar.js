@@ -16,19 +16,19 @@ function Navbar() {
         <img src={Logo} alt='logo' />
       </div>
 
-      <ul className={click ? 'menu mobile' : 'menu'}>
-        <li>Product</li>
-        <li>Services</li>
-        <li>About</li>
+      <ul className={click ? 'nav-options active' : 'nav-options'}>
+        <li className='option'>Product</li>
+        <li className='option'>Services</li>
+        <li className='option'>About</li>
         <div className='btn'>
           <h3>Log In</h3>
         </div>
       </ul>
       <div className="mobile-menu" onClick={handleClick}>
         {click ? (
-          <AiOutlineClose className="menu-icon" />
+          <AiOutlineClose className="menu-icon" size={34} />
         ) : (
-          <FaBars className="menu-icon" />
+          <FaBars className="menu-icon" size={34}/>
         )}
       </div>
     </Nav>
@@ -41,32 +41,46 @@ const Nav = styled.nav`
   width: 90%;
   margin: 0 auto;
 
+
+  @media (max-width: 640px){
+    padding-bottom: 140px;
+    .nav-options{
+        display: flex;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        opacity: 0;
+        transition: all 0.5s ease;
+        flex-direction: column;
+        list-style-type: none;
+
+        &.active{
+          margin-bottom:100px !important;
+        }
+      }
+
+      .mobile-menu{
+        display: block !important;
+      }
+
+    }
+
   .mobile-menu{
     display: none;
-
-    @media (max-width: 640px){
-      display: block;
-      width:100%;
-
-    }
   }
 
-  .menu{
-
-    @media (max-width: 640px){
-      display: none;
-    }
-  }
   .mobile{
     display: block;
   }
 
-  ul{
+  .nav-options{
     display: flex;
     gap: 40px;
     align-items: center;
 
-    li{
+    .option{
       list-style: none;
       font-style: normal;
       font-weight: 600;
@@ -81,6 +95,16 @@ const Nav = styled.nav`
       font-size: inherit;
       line-height: 24px;
       border-radius: 20px;
+    }
+
+    &.active{
+      background: inherit;
+      left: 0;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: 1;
+      align-content: center;
+      padding-left: 0px;
     }
 
   }
